@@ -60,10 +60,21 @@ section {
 .ant-card-body {
   padding: 0 !important;
 }
+.ant-card-bordered {
+  border: 1px solid #cecece !important;
+}
+.bottom-wrapper {
+  border-top: 1px solid #cecece;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .skills {
   text-align: left;
   padding: 10px 20px;
   font-size: 18px;
+  margin-bottom: 0;
 }
 @media (max-width: 1000px) {
   .flex-grid-thirds {

@@ -46,7 +46,7 @@ const sites = [
     id: 'bluestream',
     link: 'https://www.mybluestream.com/',
     thumbnail: bluestream,
-    skills: 'Angular, ES6, SASS',
+    skills: 'Angular, ES6, SASS, Bootstrap',
   },
   {
     id: 'narco',
@@ -58,13 +58,13 @@ const sites = [
     id: 'fvi',
     link: 'http://fvi.edu/medical_assistant/',
     thumbnail: fvi,
-    skills: 'HTML5, CSS3, Jquery',
+    skills: 'HTML5, CSS3, Jquery, Bootstrap',
   },
   {
     id: 'codina',
     link: 'http://armandocodina.info/',
     thumbnail: codina,
-    skills: 'HTML5, CSS3, Jquery',
+    skills: 'HTML5, CSS3, Jquery, Bootstrap',
   },
 ];
 
@@ -82,10 +82,12 @@ function App() {
               <a href={link} target='_blank' rel='noopener noreferrer'>
                 <Card hoverable style={{ width: '100%', height: 300 }}>
                   <div style={{ backgroundImage: `url("${thumbnail}")` }} className='thumbnail' />
-                  <p className='skills'>
-                    <strong>Skills: </strong>
-                    {skills}
-                  </p>
+                  <div className='bottom-wrapper'>
+                    <p className='skills'>
+                      <strong>Stack: </strong>
+                      {skills}
+                    </p>
+                  </div>
                 </Card>
               </a>
             </div>
